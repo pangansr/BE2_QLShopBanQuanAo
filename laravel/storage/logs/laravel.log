@@ -1,0 +1,42 @@
+[2024-03-31 20:12:28] local.ERROR: The "--vertison" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--vertison\" option does not exist. at D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Input\\ArgvInput.php:223)
+[stacktrace]
+#0 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Input\\ArgvInput.php(152): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption('vertison', NULL)
+#1 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Input\\ArgvInput.php(85): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption('--vertison')
+#2 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Input\\ArgvInput.php(74): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('--vertison', true)
+#3 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Input\\Input.php(56): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Command\\Command.php(285): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#5 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Application.php(1096): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(Symfony\\Component\\Console\\Command\\ListCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 D:\\QLShopQuanAo\\laravel_v10.48.4\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2024-03-31 20:12:48] local.ERROR: The "--vetison" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--vetison\" option does not exist. at D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Input\\ArgvInput.php:223)
+[stacktrace]
+#0 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Input\\ArgvInput.php(152): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption('vetison', NULL)
+#1 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Input\\ArgvInput.php(85): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption('--vetison')
+#2 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Input\\ArgvInput.php(74): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('--vetison', true)
+#3 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Input\\Input.php(56): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Command\\Command.php(285): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#5 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Application.php(1096): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(Symfony\\Component\\Console\\Command\\ListCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 D:\\QLShopQuanAo\\laravel_v10.48.4\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2024-03-31 20:13:24] local.ERROR: The "--vestion" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--vestion\" option does not exist. at D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Input\\ArgvInput.php:223)
+[stacktrace]
+#0 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Input\\ArgvInput.php(152): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption('vestion', NULL)
+#1 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Input\\ArgvInput.php(85): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption('--vestion')
+#2 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Input\\ArgvInput.php(74): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('--vestion', true)
+#3 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Input\\Input.php(56): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Command\\Command.php(285): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#5 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Application.php(1096): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(Symfony\\Component\\Console\\Command\\ListCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 D:\\QLShopQuanAo\\laravel_v10.48.4\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 D:\\QLShopQuanAo\\laravel_v10.48.4\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
