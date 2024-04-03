@@ -42,5 +42,51 @@ class CrudUserController extends Controller
         //$user = User::create($data);
         return redirect("create")->withSuccess('You have signed-in');
     }
+   
 }
+   /**
+     * List of users
+     */
+   
+
+     public function listUser()
+     {
+        // if (Auth::check()) {
+             $users = User::all();
+             return view('crud_user.list', ['users' => $users]);
+        // }
+       
+       //  return redirect()->route('user.list')->with('success', 'Bạn không được phép truy cập');
+
+     }
+
+     public function readUser(Request $request) {
+        $user_id = $request->get('id');
+        $user = User::find($user_id);
+
+        return view('crud_user.read', ['messi' => $user]);
+    }
+
+    /**
+     * Delete user by id
+     */
+    public function deleteUser(Request $request) {
+        $user_id = $request->get('id');
+        $user = User::destroy($user_id);
+
+        return redirect("list")->withSuccess('You have signed-in');
+    }
+
+    /**
+     * Form update user page
+     */
+    public function updateUser(Request $request)
+    {
+        $user_id = $request->get('id');
+        $user = User::find($user_id);
+
+        return view('crud_user.update', ['user' => $user]);
+    }
+
+     
 }
