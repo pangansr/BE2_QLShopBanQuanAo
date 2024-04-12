@@ -29,6 +29,8 @@ class CrudUserController extends Controller
             $imageName = time() . '_' . $request->image->getClientOriginalName(); 
             $request->image->move(public_path('images'), $imageName); 
            
+
+            
             $data = $request->all();
             $check = User::create([
                 'name' => $data['name'],
