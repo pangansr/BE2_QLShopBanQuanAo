@@ -3,6 +3,7 @@
 @section('content')
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <style>
     a{
   text-decoration: none;
@@ -117,6 +118,8 @@ margin: auto 180px;
 =======
 =======
 >>>>>>> 6-view_delete
+=======
+>>>>>>> 7-update
     <main class="login-form">
         <div class="cotainer">
             <div class="row justify-content-center">
@@ -151,13 +154,17 @@ margin: auto 180px;
                                 </div>
                             </form>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 3-listOfUser
 =======
 >>>>>>> 6-view_delete
+=======
+>>>>>>> 7-update
                         </div>
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </form>
@@ -174,3 +181,8 @@ margin: auto 180px;
     </main>
 @endsection
 >>>>>>> 6-view_delete
+=======
+        </div>
+    </main>
+@endsection
+>>>>>>> 7-update

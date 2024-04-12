@@ -6,11 +6,14 @@ use Illuminate\Support\Facades\Schema;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3-listOfUser
 =======
 >>>>>>> 6-view_delete
+=======
+>>>>>>> 7-update
 return new class extends Migration
 {
     /**

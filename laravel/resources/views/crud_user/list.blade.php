@@ -37,6 +37,7 @@
                                         </td>
                                         <td>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <a href="" class="btn btn-sm btn-info">View</a>
                                             <a href="" class="btn btn-sm btn-warning">Edit</a>
                                             <a href="" class="btn btn-sm btn-danger">Delete</a>
@@ -45,12 +46,18 @@
                                             <a href="" class="btn btn-sm btn-warning">Edit</a>
                                             <a href="{{ route('user.deleteUser', ['id' => $user->id]) }}" onclick="return confirm('Bạn có chắc muốn xóa tài khoản này không?')" class="btn btn-sm btn-danger">Delete</a>
 >>>>>>> 6-view_delete
+=======
+                                            <a href="{{ route('user.readUser', ['id' => $user->id]) }}" class="btn btn-sm btn-info">View</a>
+                                            <a href="{{ route('user.updateUser', ['id' => $user->id]) }}" class="btn btn-sm btn-warning">Edit</a>
+                                            <a href="{{ route('user.deleteUser', ['id' => $user->id]) }}" class="btn btn-sm btn-danger">Delete</a>
+>>>>>>> 7-update
                                         </td>
                                     </tr>
                                     @endforeach
                                 </tbody>
                             </table>
                         </div>
+<<<<<<< HEAD
 <<<<<<< HEAD
                         </div>
                             <link href="{{ asset('css/pagination.css') }}" rel="stylesheet">
@@ -77,6 +84,8 @@
                         </div>
 =======
 >>>>>>> 6-view_delete
+=======
+>>>>>>> 7-update
                     </div>
                 </div>
             </div>
@@ -84,7 +93,11 @@
     </div>
 </main>
 <<<<<<< HEAD
+<<<<<<< HEAD
 @endsection
 =======
 @endsection
 >>>>>>> 6-view_delete
+=======
+@endsection
+>>>>>>> 7-update
