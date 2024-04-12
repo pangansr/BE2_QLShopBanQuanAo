@@ -15,10 +15,7 @@ use Laravel\Prompts\SelectPrompt;
 use Laravel\Prompts\Spinner;
 use Laravel\Prompts\SuggestPrompt;
 use Laravel\Prompts\Table;
-<<<<<<< HEAD
-=======
 use Laravel\Prompts\TextareaPrompt;
->>>>>>> 6-view_delete
 use Laravel\Prompts\TextPrompt;
 use Laravel\Prompts\Themes\Default\ConfirmPromptRenderer;
 use Laravel\Prompts\Themes\Default\MultiSearchPromptRenderer;
@@ -32,10 +29,7 @@ use Laravel\Prompts\Themes\Default\SelectPromptRenderer;
 use Laravel\Prompts\Themes\Default\SpinnerRenderer;
 use Laravel\Prompts\Themes\Default\SuggestPromptRenderer;
 use Laravel\Prompts\Themes\Default\TableRenderer;
-<<<<<<< HEAD
-=======
 use Laravel\Prompts\Themes\Default\TextareaPromptRenderer;
->>>>>>> 6-view_delete
 use Laravel\Prompts\Themes\Default\TextPromptRenderer;
 
 trait Themes
@@ -53,10 +47,7 @@ trait Themes
     protected static array $themes = [
         'default' => [
             TextPrompt::class => TextPromptRenderer::class,
-<<<<<<< HEAD
-=======
             TextareaPrompt::class => TextareaPromptRenderer::class,
->>>>>>> 6-view_delete
             PasswordPrompt::class => PasswordPromptRenderer::class,
             SelectPrompt::class => SelectPromptRenderer::class,
             MultiSelectPrompt::class => MultiSelectPromptRenderer::class,

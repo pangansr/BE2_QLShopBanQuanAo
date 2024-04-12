@@ -38,11 +38,7 @@ trait Scrolling
     {
         $reservedLines = ($renderer = $this->getRenderer()) instanceof ScrollingRenderer ? $renderer->reservedLines() : 0;
 
-<<<<<<< HEAD
-        $this->scroll = min($this->scroll, $this->terminal()->lines() - $reservedLines);
-=======
         $this->scroll = max(1, min($this->scroll, $this->terminal()->lines() - $reservedLines));
->>>>>>> 6-view_delete
     }
 
     /**

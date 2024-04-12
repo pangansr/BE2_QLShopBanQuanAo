@@ -601,8 +601,6 @@ class HasManyThrough extends Relation
     }
 
     /**
-<<<<<<< HEAD
-=======
      * Chunk the results of a query by comparing IDs in descending order.
      *
      * @param  int  $count
@@ -621,7 +619,6 @@ class HasManyThrough extends Relation
     }
 
     /**
->>>>>>> 6-view_delete
      * Execute a callback over each item while chunking by ID.
      *
      * @param  callable  $callback
@@ -696,8 +693,6 @@ class HasManyThrough extends Relation
     }
 
     /**
-<<<<<<< HEAD
-=======
      * Query lazily, by chunking the results of a query by comparing IDs in descending order.
      *
      * @param  int  $chunkSize
@@ -715,7 +710,6 @@ class HasManyThrough extends Relation
     }
 
     /**
->>>>>>> 6-view_delete
      * Prepare the query builder for query execution.
      *
      * @param  array  $columns

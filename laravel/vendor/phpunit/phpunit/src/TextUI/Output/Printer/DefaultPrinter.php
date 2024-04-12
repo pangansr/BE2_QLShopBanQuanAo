@@ -69,11 +69,8 @@ final class DefaultPrinter implements Printer
      */
     private function __construct(string $out)
     {
-<<<<<<< HEAD
-=======
         $this->isPhpStream = str_starts_with($out, 'php://');
 
->>>>>>> 6-view_delete
         if (str_starts_with($out, 'socket://')) {
             $tmp = explode(':', str_replace('socket://', '', $out));
 
@@ -92,11 +89,6 @@ final class DefaultPrinter implements Printer
             return;
         }
 
-<<<<<<< HEAD
-        $this->isPhpStream = str_starts_with($out, 'php://');
-
-=======
->>>>>>> 6-view_delete
         if (!$this->isPhpStream && !Filesystem::createDirectory(dirname($out))) {
             throw new DirectoryDoesNotExistException(dirname($out));
         }

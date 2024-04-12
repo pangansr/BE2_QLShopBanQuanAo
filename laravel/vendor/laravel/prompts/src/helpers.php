@@ -14,8 +14,6 @@ function text(string $label, string $placeholder = '', string $default = '', boo
 }
 
 /**
-<<<<<<< HEAD
-=======
  * Prompt the user for multiline text input.
  */
 function textarea(string $label, string $placeholder = '', string $default = '', bool|string $required = false, ?Closure $validate = null, string $hint = '', int $rows = 5): string
@@ -24,7 +22,6 @@ function textarea(string $label, string $placeholder = '', string $default = '',
 }
 
 /**
->>>>>>> 6-view_delete
  * Prompt the user for input, hiding the value.
  */
 function password(string $label, string $placeholder = '', bool|string $required = false, mixed $validate = null, string $hint = ''): string

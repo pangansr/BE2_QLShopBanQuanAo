@@ -183,15 +183,9 @@ final class ProgressBar
         $this->messages[$name] = $message;
     }
 
-<<<<<<< HEAD
-    public function getMessage(string $name = 'message'): string
-    {
-        return $this->messages[$name];
-=======
     public function getMessage(string $name = 'message'): ?string
     {
         return $this->messages[$name] ?? null;
->>>>>>> 6-view_delete
     }
 
     public function getStartTime(): int

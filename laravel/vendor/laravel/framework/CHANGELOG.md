@@ -1,8 +1,5 @@
 # Release Notes for 10.x
 
-<<<<<<< HEAD
-## [Unreleased](https://github.com/laravel/framework/compare/v10.48.3...10.x)
-=======
 ## [Unreleased](https://github.com/laravel/framework/compare/v10.48.6...10.x)
 
 ## [v10.48.6](https://github.com/laravel/framework/compare/v10.48.5...v10.48.6) - 2024-04-10
@@ -19,7 +16,6 @@
 
 * [10.x] Fix `Collection::concat()` return type by @axlon in https://github.com/laravel/framework/pull/50669
 * [10.x] Fix command alias registration and usage by @crynobone in https://github.com/laravel/framework/pull/50695
->>>>>>> 6-view_delete
 
 ## [v10.48.3](https://github.com/laravel/framework/compare/v10.48.2...v10.48.3) - 2024-03-15
 

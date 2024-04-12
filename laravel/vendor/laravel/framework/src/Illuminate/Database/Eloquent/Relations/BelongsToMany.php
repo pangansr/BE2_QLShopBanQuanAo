@@ -997,10 +997,6 @@ class BelongsToMany extends Relation
      */
     public function chunkById($count, callable $callback, $column = null, $alias = null)
     {
-<<<<<<< HEAD
-        $this->prepareQueryBuilder();
-
-=======
         return $this->orderedChunkById($count, $callback, $column, $alias);
     }
 
@@ -1050,26 +1046,17 @@ class BelongsToMany extends Relation
      */
     public function orderedChunkById($count, callable $callback, $column = null, $alias = null, $descending = false)
     {
->>>>>>> 6-view_delete
         $column ??= $this->getRelated()->qualifyColumn(
             $this->getRelatedKeyName()
         );
 
         $alias ??= $this->getRelatedKeyName();
 
-<<<<<<< HEAD
-        return $this->query->chunkById($count, function ($results) use ($callback) {
-            $this->hydratePivotRelation($results->all());
-
-            return $callback($results);
-        }, $column, $alias);
-=======
         return $this->prepareQueryBuilder()->orderedChunkById($count, function ($results, $page) use ($callback) {
             $this->hydratePivotRelation($results->all());
 
             return $callback($results, $page);
         }, $column, $alias, $descending);
->>>>>>> 6-view_delete
     }
 
     /**
@@ -1129,8 +1116,6 @@ class BelongsToMany extends Relation
     }
 
     /**
-<<<<<<< HEAD
-=======
      * Query lazily, by chunking the results of a query by comparing IDs in descending order.
      *
      * @param  int  $chunkSize
@@ -1154,7 +1139,6 @@ class BelongsToMany extends Relation
     }
 
     /**
->>>>>>> 6-view_delete
      * Get a lazy collection for the given query.
      *
      * @return \Illuminate\Support\LazyCollection

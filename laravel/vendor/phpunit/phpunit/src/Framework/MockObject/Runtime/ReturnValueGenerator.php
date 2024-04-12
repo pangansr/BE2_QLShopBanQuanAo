@@ -57,53 +57,6 @@ final class ReturnValueGenerator
             $types = [$returnType];
         }
 
-<<<<<<< HEAD
-        $types = array_map('strtolower', $types);
-
-        if (!$intersection) {
-            if (in_array('', $types, true) ||
-                in_array('null', $types, true) ||
-                in_array('mixed', $types, true) ||
-                in_array('void', $types, true)) {
-                return null;
-            }
-
-            if (in_array('true', $types, true)) {
-                return true;
-            }
-
-            if (in_array('false', $types, true) ||
-                in_array('bool', $types, true)) {
-                return false;
-            }
-
-            if (in_array('float', $types, true)) {
-                return 0.0;
-            }
-
-            if (in_array('int', $types, true)) {
-                return 0;
-            }
-
-            if (in_array('string', $types, true)) {
-                return '';
-            }
-
-            if (in_array('array', $types, true)) {
-                return [];
-            }
-
-            if (in_array('static', $types, true)) {
-                return $this->newInstanceOf($stubClassName, $className, $methodName);
-            }
-
-            if (in_array('object', $types, true)) {
-                return new stdClass;
-            }
-
-            if (in_array('callable', $types, true) ||
-                in_array('closure', $types, true)) {
-=======
         if (!$intersection) {
             $lowerTypes = array_map('strtolower', $types);
 
@@ -149,21 +102,14 @@ final class ReturnValueGenerator
 
             if (in_array('callable', $lowerTypes, true) ||
                 in_array('closure', $lowerTypes, true)) {
->>>>>>> 6-view_delete
                 return static function (): void
                 {
                 };
             }
 
-<<<<<<< HEAD
-            if (in_array('traversable', $types, true) ||
-                in_array('generator', $types, true) ||
-                in_array('iterable', $types, true)) {
-=======
             if (in_array('traversable', $lowerTypes, true) ||
                 in_array('generator', $lowerTypes, true) ||
                 in_array('iterable', $lowerTypes, true)) {
->>>>>>> 6-view_delete
                 $generator = static function (): \Generator
                 {
                     yield from [];

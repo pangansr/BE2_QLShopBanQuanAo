@@ -2,21 +2,8 @@
 
 namespace App\Models;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
->>>>>>> 3-listOfUser
-=======
-use Laravel\Sanctum\HasApiTokens;
-use Illuminate\Notifications\Notifiable;
->>>>>>> 6-view_delete
-=======
-use Laravel\Sanctum\HasApiTokens;
-use Illuminate\Notifications\Notifiable;
->>>>>>> 7-update
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;

@@ -2308,16 +2308,6 @@ if (!function_exists('PHPUnit\Framework\isTrue')) {
     }
 }
 
-<<<<<<< HEAD
-if (!function_exists('PHPUnit\Framework\callback')) {
-    function callback(callable $callback): Callback
-    {
-        return Assert::callback(...func_get_args());
-    }
-}
-
-=======
->>>>>>> 6-view_delete
 if (!function_exists('PHPUnit\Framework\isFalse')) {
     function isFalse(): IsFalse
     {
@@ -2570,8 +2560,6 @@ if (!function_exists('PHPUnit\Framework\objectEquals')) {
     }
 }
 
-<<<<<<< HEAD
-=======
 if (!function_exists('PHPUnit\Framework\callback')) {
     /**
      * @psalm-template CallbackInput of mixed
@@ -2586,7 +2574,6 @@ if (!function_exists('PHPUnit\Framework\callback')) {
     }
 }
 
->>>>>>> 6-view_delete
 if (!function_exists('PHPUnit\Framework\any')) {
     /**
      * Returns a matcher that matches when the method is executed

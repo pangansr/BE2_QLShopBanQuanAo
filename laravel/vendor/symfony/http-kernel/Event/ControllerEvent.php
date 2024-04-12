@@ -70,11 +70,7 @@ final class ControllerEvent extends KernelEvent
         if (\is_array($controller) && method_exists(...$controller)) {
             $this->controllerReflector = new \ReflectionMethod(...$controller);
         } elseif (\is_string($controller) && str_contains($controller, '::')) {
-<<<<<<< HEAD
-            $this->controllerReflector = new \ReflectionMethod($controller);
-=======
             $this->controllerReflector = new \ReflectionMethod(...explode('::', $controller, 2));
->>>>>>> 6-view_delete
         } else {
             $this->controllerReflector = new \ReflectionFunction($controller(...));
         }

@@ -47,11 +47,7 @@ final class Help
         foreach ($this->elements() as $options) {
             foreach ($options as $option) {
                 if (isset($option['arg'])) {
-<<<<<<< HEAD
-                    $this->lengthOfLongestOptionName = max($this->lengthOfLongestOptionName, isset($option['arg']) ? strlen($option['arg']) : 0);
-=======
                     $this->lengthOfLongestOptionName = max($this->lengthOfLongestOptionName, strlen($option['arg']));
->>>>>>> 6-view_delete
                 }
             }
         }

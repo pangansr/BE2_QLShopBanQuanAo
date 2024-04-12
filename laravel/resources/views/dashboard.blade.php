@@ -18,16 +18,6 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 @guest
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                
-=======
->>>>>>> 3-listOfUser
-=======
->>>>>>> 6-view_delete
-=======
->>>>>>> 7-update
                     <li class="nav-item">
                          <a class="nav-link" href="{{ route('login') }}">Login</a>
                     

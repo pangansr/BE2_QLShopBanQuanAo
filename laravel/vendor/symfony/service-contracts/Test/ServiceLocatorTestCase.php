@@ -12,13 +12,7 @@
 namespace Symfony\Contracts\Service\Test;
 
 use PHPUnit\Framework\TestCase;
-<<<<<<< HEAD
-use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\ContainerInterface;
-use Psr\Container\NotFoundExceptionInterface;
-=======
-use Psr\Container\ContainerInterface;
->>>>>>> 6-view_delete
 use Symfony\Contracts\Service\ServiceLocatorTrait;
 
 abstract class ServiceLocatorTestCase extends TestCase
@@ -72,16 +66,6 @@ abstract class ServiceLocatorTestCase extends TestCase
 
     public function testThrowsOnUndefinedInternalService()
     {
-<<<<<<< HEAD
-        $locator = $this->getServiceLocator([
-            'foo' => function () use (&$locator) { return $locator->get('bar'); },
-        ]);
-
-        if (!$this->getExpectedException()) {
-            $this->expectException(NotFoundExceptionInterface::class);
-            $this->expectExceptionMessage('The service "foo" has a dependency on a non-existent service "bar". This locator only knows about the "foo" service.');
-        }
-=======
         if (!$this->getExpectedException()) {
             $this->expectException(\Psr\Container\NotFoundExceptionInterface::class);
             $this->expectExceptionMessage('The service "foo" has a dependency on a non-existent service "bar". This locator only knows about the "foo" service.');
@@ -89,30 +73,20 @@ abstract class ServiceLocatorTestCase extends TestCase
         $locator = $this->getServiceLocator([
             'foo' => function () use (&$locator) { return $locator->get('bar'); },
         ]);
->>>>>>> 6-view_delete
 
         $locator->get('foo');
     }
 
     public function testThrowsOnCircularReference()
     {
-<<<<<<< HEAD
-=======
         $this->expectException(\Psr\Container\ContainerExceptionInterface::class);
         $this->expectExceptionMessage('Circular reference detected for service "bar", path: "bar -> baz -> bar".');
->>>>>>> 6-view_delete
         $locator = $this->getServiceLocator([
             'foo' => function () use (&$locator) { return $locator->get('bar'); },
             'bar' => function () use (&$locator) { return $locator->get('baz'); },
             'baz' => function () use (&$locator) { return $locator->get('bar'); },
         ]);
 
-<<<<<<< HEAD
-        $this->expectException(ContainerExceptionInterface::class);
-        $this->expectExceptionMessage('Circular reference detected for service "bar", path: "bar -> baz -> bar".');
-
-=======
->>>>>>> 6-view_delete
         $locator->get('foo');
     }
 }

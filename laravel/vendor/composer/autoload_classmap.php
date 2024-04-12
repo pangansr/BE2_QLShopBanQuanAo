@@ -9,10 +9,7 @@ return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
-<<<<<<< HEAD
-=======
     'App\\Http\\Controllers\\CrudUserController' => $baseDir . '/app/Http/Controllers/CrudUserController.php',
->>>>>>> 6-view_delete
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
@@ -23,7 +20,6 @@ return array(
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\ValidateSignature' => $baseDir . '/app/Http/Middleware/ValidateSignature.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
-    'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',
@@ -2282,10 +2278,7 @@ return array(
     'Laravel\\Prompts\\Table' => $vendorDir . '/laravel/prompts/src/Table.php',
     'Laravel\\Prompts\\Terminal' => $vendorDir . '/laravel/prompts/src/Terminal.php',
     'Laravel\\Prompts\\TextPrompt' => $vendorDir . '/laravel/prompts/src/TextPrompt.php',
-<<<<<<< HEAD
-=======
     'Laravel\\Prompts\\TextareaPrompt' => $vendorDir . '/laravel/prompts/src/TextareaPrompt.php',
->>>>>>> 6-view_delete
     'Laravel\\Prompts\\Themes\\Contracts\\Scrolling' => $vendorDir . '/laravel/prompts/src/Themes/Contracts/Scrolling.php',
     'Laravel\\Prompts\\Themes\\Default\\Concerns\\DrawsBoxes' => $vendorDir . '/laravel/prompts/src/Themes/Default/Concerns/DrawsBoxes.php',
     'Laravel\\Prompts\\Themes\\Default\\Concerns\\DrawsScrollbars' => $vendorDir . '/laravel/prompts/src/Themes/Default/Concerns/DrawsScrollbars.php',
@@ -2303,10 +2296,7 @@ return array(
     'Laravel\\Prompts\\Themes\\Default\\SuggestPromptRenderer' => $vendorDir . '/laravel/prompts/src/Themes/Default/SuggestPromptRenderer.php',
     'Laravel\\Prompts\\Themes\\Default\\TableRenderer' => $vendorDir . '/laravel/prompts/src/Themes/Default/TableRenderer.php',
     'Laravel\\Prompts\\Themes\\Default\\TextPromptRenderer' => $vendorDir . '/laravel/prompts/src/Themes/Default/TextPromptRenderer.php',
-<<<<<<< HEAD
-=======
     'Laravel\\Prompts\\Themes\\Default\\TextareaPromptRenderer' => $vendorDir . '/laravel/prompts/src/Themes/Default/TextareaPromptRenderer.php',
->>>>>>> 6-view_delete
     'Laravel\\Sail\\Console\\AddCommand' => $vendorDir . '/laravel/sail/src/Console/AddCommand.php',
     'Laravel\\Sail\\Console\\Concerns\\InteractsWithDockerComposeServices' => $vendorDir . '/laravel/sail/src/Console/Concerns/InteractsWithDockerComposeServices.php',
     'Laravel\\Sail\\Console\\InstallCommand' => $vendorDir . '/laravel/sail/src/Console/InstallCommand.php',

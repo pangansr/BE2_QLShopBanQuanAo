@@ -60,8 +60,6 @@ trait Cursor
 
         static::writeDirectly($sequence);
     }
-<<<<<<< HEAD
-=======
 
     /**
      * Move the cursor to the given column.
@@ -78,5 +76,4 @@ trait Cursor
     {
         static::writeDirectly("\e[{$lines}A");
     }
->>>>>>> 6-view_delete
 }

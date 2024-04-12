@@ -45,20 +45,13 @@ final class ProcessStream extends AbstractStream
         }
         $this->in = &$pipes[0];
         $this->out = &$pipes[1];
-<<<<<<< HEAD
-=======
         $this->err = &$pipes[2];
->>>>>>> 6-view_delete
     }
 
     public function terminate(): void
     {
         if (null !== $this->stream) {
             fclose($this->in);
-<<<<<<< HEAD
-            fclose($this->out);
-            proc_close($this->stream);
-=======
             $out = stream_get_contents($this->out);
             fclose($this->out);
             $err = stream_get_contents($this->err);
@@ -66,7 +59,6 @@ final class ProcessStream extends AbstractStream
             if (0 !== $exitCode = proc_close($this->stream)) {
                 throw new TransportException('Process failed with exit code '.$exitCode.': '.$out.$err);
             }
->>>>>>> 6-view_delete
         }
 
         parent::terminate();

@@ -17,33 +17,11 @@ use App\Http\Controllers\CrudUserController;
 Route::get('/', function () {
     return view('crud_user.create');
 });
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-Route::get('dashboard', [CrudUserController::class, 'dashboard']);
-Route::get('create', [CrudUserController::class, 'createUser'])->name('user.createUser');
-Route::post('create', [CrudUserController::class, 'postUser'])->name('user.postUser');
->>>>>>> 4-register
-=======
-=======
-//Nguen Huu Kien
-Route::get('list', [CrudUserController::class, 'listUser'])->name('user.list');
-
->>>>>>> 3-listOfUser
-=======
 //Tran Huu Kien
 Route::get('list', [CrudUserController::class, 'listUser'])->name('user.list');
+Route::get('users', [CrudUserController::class, 'index'])->name('users.index');
 
->>>>>>> 6-view_delete
-=======
-//Tran Huu Kien
-Route::get('list', [CrudUserController::class, 'listUser'])->name('user.list');
 
->>>>>>> 7-update
 //Login(Tran Huu Nam)
 Route::get('login', [CrudUserController::class, 'login'])->name('login');
 Route::post('login', [CrudUserController::class, 'authUser'])->name('user.authUser');
@@ -54,18 +32,6 @@ Route::get('dashboard', [CrudUserController::class, 'dashboard']);
 Route::get('create', [CrudUserController::class, 'createUser'])->name('user.createUser');
 Route::post('create', [CrudUserController::class, 'postUser'])->name('user.postUser');
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 3-login/logout
-=======
->>>>>>> 3-listOfUser
-=======
-//Pham Thi Bich Buoc
-Route::get('read', [CrudUserController::class, 'readUser'])->name('user.readUser');
-Route::get('delete', [CrudUserController::class, 'deleteUser'])->name('user.deleteUser');
->>>>>>> 6-view_delete
-=======
 //Pham Thi Bich Buoc
 Route::get('read', [CrudUserController::class, 'readUser'])->name('user.readUser');
 Route::get('delete', [CrudUserController::class, 'deleteUser'])->name('user.deleteUser');
@@ -73,4 +39,3 @@ Route::get('delete', [CrudUserController::class, 'deleteUser'])->name('user.dele
 //Pham Thi Thanh Tam
 Route::get('update', [CrudUserController::class, 'updateUser'])->name('user.updateUser');
 Route::post('update', [CrudUserController::class, 'postUpdateUser'])->name('user.postUpdateUser');
->>>>>>> 7-update

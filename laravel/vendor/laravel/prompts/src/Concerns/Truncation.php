@@ -17,8 +17,6 @@ trait Truncation
 
         return mb_strwidth($string) <= $width ? $string : (mb_strimwidth($string, 0, $width - 1).'…');
     }
-<<<<<<< HEAD
-=======
 
     /**
      * Multi-byte version of wordwrap.
@@ -105,5 +103,4 @@ trait Truncation
 
         return implode($break, $result);
     }
->>>>>>> 6-view_delete
 }

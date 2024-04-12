@@ -72,14 +72,11 @@ class Key
     const CTRL_A = "\x01";
 
     /**
-<<<<<<< HEAD
-=======
      * EOF
      */
     const CTRL_D = "\x04";
 
     /**
->>>>>>> 6-view_delete
      * End
      */
     const CTRL_E = "\x05";
