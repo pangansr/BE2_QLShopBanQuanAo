@@ -9,6 +9,44 @@ use Illuminate\Http\Request;
 
 class CrudUserController extends Controller
 {
+<<<<<<< HEAD
+=======
+    //Pham Thi Thanh Tam
+    public function updateUser(Request $request)
+    {
+        $user_id = $request->get('id');
+        $user = User::find($user_id);
+
+        return view('crud_user.update', ['user' => $user]);
+    }
+
+    public function postUpdateUser(Request $request)
+    {
+        $input = $request->all();
+
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email|unique:users,id,'.$input['id'],
+            'password' => 'required|min:6',
+        ]);
+
+       $user = User::find($input['id']);
+       $user->name = $input['name'];
+       $user->email = $input['email'];
+       $user->password = $input['password'];
+       $user->phonenumber = $input['phonenumber'];
+       if ($request->hasFile('image')) {
+        $image = $request->file('image');
+        $imageName = time().'.'.$image->getClientOriginalExtension();
+        $image->move(public_path('images'), $imageName);
+        $user->image = $imageName;
+        }
+       $user->save();
+
+        return redirect("list")->withSuccess('You have signed-in');
+    }
+
+>>>>>>> 7-update
     //Pham Thi Bich Buoc
     public function readUser(Request $request) {
         $user_id = $request->get('id');

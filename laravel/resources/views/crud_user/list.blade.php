@@ -37,7 +37,11 @@
                                         </td>
                                         <td>
                                             <a href="{{ route('user.readUser', ['id' => $user->id]) }}" class="btn btn-sm btn-info">View</a>
+<<<<<<< HEAD
                                             <a href="" class="btn btn-sm btn-warning">Edit</a>
+=======
+                                            <a href="{{ route('user.updateUser', ['id' => $user->id]) }}" class="btn btn-sm btn-warning">Edit</a>
+>>>>>>> 7-update
                                             <a href="{{ route('user.deleteUser', ['id' => $user->id]) }}" class="btn btn-sm btn-danger">Delete</a>
                                         </td>
                                     </tr>
