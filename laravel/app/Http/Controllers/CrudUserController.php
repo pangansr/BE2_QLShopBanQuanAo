@@ -9,8 +9,7 @@ use Illuminate\Http\Request;
 
 class CrudUserController extends Controller
 {
-<<<<<<< HEAD
-=======
+
     //Pham Thi Thanh Tam
     public function updateUser(Request $request)
     {
@@ -46,7 +45,7 @@ class CrudUserController extends Controller
         return redirect("list")->withSuccess('You have signed-in');
     }
 
->>>>>>> 7-update
+
     //Pham Thi Bich Buoc
     public function readUser(Request $request) {
         $user_id = $request->get('id');
