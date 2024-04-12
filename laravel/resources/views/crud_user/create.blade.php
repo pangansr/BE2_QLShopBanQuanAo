@@ -1,6 +1,7 @@
 @extends('dashboard')
 
 @section('content')
+
     <main class="signup-form">
         <div class="cotainer">
             <div class="row justify-content-center">
@@ -47,11 +48,11 @@
                                     </div>
                                 <div class="form-group mb-3">
                                     <div class="checkbox">
-                                        <label><input type="checkbox" name="remember"> Remember Me</label>
+                                        <label><input type="checkbox" name="remember"> Lưu dữ liệu</label>
                                     </div>
                                 </div>
                                 <div class="d-grid mx-auto">
-                                    <button type="submit" class="btn btn-dark btn-block">Sign up</button>
+                                    <button type="submit" class="btn btn-dark btn-block">Đăng ký</button>
                                 </div>
                             </form>
                         </div>
