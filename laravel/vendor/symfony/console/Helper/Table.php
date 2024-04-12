@@ -371,8 +371,14 @@ class Table
                         if ($headers && !$containsColspan) {
                             if (0 === $idx) {
                                 $rows[] = [sprintf(
+<<<<<<< HEAD
                                     '<comment>%s</>: %s',
                                     str_pad($headers[$i] ?? '', $maxHeaderLength, ' ', \STR_PAD_LEFT),
+=======
+                                    '<comment>%s%s</>: %s',
+                                    str_repeat(' ', $maxHeaderLength - Helper::width(Helper::removeDecoration($formatter, $headers[$i] ?? ''))),
+                                    $headers[$i] ?? '',
+>>>>>>> 6-view_delete
                                     $part
                                 )];
                             } else {

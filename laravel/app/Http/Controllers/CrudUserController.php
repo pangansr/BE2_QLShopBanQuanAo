@@ -10,13 +10,36 @@ use Illuminate\Http\Request;
 class CrudUserController extends Controller
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+    //Pham Thi Bich Buoc
+    public function readUser(Request $request) {
+        $user_id = $request->get('id');
+        $users = User::find($user_id);
+
+        return view('crud_user.read', ['users' => $users]);
+    }
+    public function deleteUser(Request $request) {
+        $user_id = $request->get('id');
+        $user = User::destroy($user_id);
+
+        return redirect("list")->withSuccess('You have signed-in');
+    }
+
+
+
+>>>>>>> 6-view_delete
     //Nguyen Huu Kien
     public function listUser()
      {
         // if (Auth::check()) {
+<<<<<<< HEAD
            //  $users = User::all();
              $users = User::paginate(1); 
+=======
+             $users = User::all();
+>>>>>>> 6-view_delete
              return view('crud_user.list', ['users' => $users]);
         // }
        
@@ -25,7 +48,10 @@ class CrudUserController extends Controller
 
 
 
+<<<<<<< HEAD
 >>>>>>> 3-listOfUser
+=======
+>>>>>>> 6-view_delete
      //Tran Huu Nam
      public function login()
      {
@@ -43,12 +69,17 @@ class CrudUserController extends Controller
  
           if (Auth::attempt($credentials)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
              return redirect()->intended('dashboard');
              //->withSuccess('Signed in');
 =======
              return redirect()->intended('list')
                  ->withSuccess('Signed in');
 >>>>>>> 3-listOfUser
+=======
+             return redirect()->intended('list')
+                 ->withSuccess('Signed in');
+>>>>>>> 6-view_delete
         }
          return redirect("login")->withSuccess('Login details are not valid');
      }
@@ -85,10 +116,13 @@ class CrudUserController extends Controller
             $request->image->move(public_path('images'), $imageName); 
            
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             
 =======
 >>>>>>> 3-listOfUser
+=======
+>>>>>>> 6-view_delete
             $data = $request->all();
             $check = User::create([
                 'name' => $data['name'],

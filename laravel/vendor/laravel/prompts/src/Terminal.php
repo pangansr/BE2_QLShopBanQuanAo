@@ -2,6 +2,10 @@
 
 namespace Laravel\Prompts;
 
+<<<<<<< HEAD
+=======
+use ReflectionClass;
+>>>>>>> 6-view_delete
 use RuntimeException;
 use Symfony\Component\Console\Terminal as SymfonyTerminal;
 
@@ -13,6 +17,7 @@ class Terminal
     protected ?string $initialTtyMode;
 
     /**
+<<<<<<< HEAD
      * The number of columns in the terminal.
      */
     protected int $cols;
@@ -21,6 +26,19 @@ class Terminal
      * The number of lines in the terminal.
      */
     protected int $lines;
+=======
+     * The Symfony Terminal instance.
+     */
+    protected SymfonyTerminal $terminal;
+
+    /**
+     * Create a new Terminal instance.
+     */
+    public function __construct()
+    {
+        $this->terminal = new SymfonyTerminal();
+    }
+>>>>>>> 6-view_delete
 
     /**
      * Read a line from the terminal.
@@ -59,7 +77,11 @@ class Terminal
      */
     public function cols(): int
     {
+<<<<<<< HEAD
         return $this->cols ??= (new SymfonyTerminal())->getWidth();
+=======
+        return $this->terminal->getWidth();
+>>>>>>> 6-view_delete
     }
 
     /**
@@ -67,7 +89,21 @@ class Terminal
      */
     public function lines(): int
     {
+<<<<<<< HEAD
         return $this->lines ??= (new SymfonyTerminal())->getHeight();
+=======
+        return $this->terminal->getHeight();
+    }
+
+    /**
+     * (Re)initialize the terminal dimensions.
+     */
+    public function initDimensions(): void
+    {
+        (new ReflectionClass($this->terminal))
+            ->getMethod('initDimensions')
+            ->invoke($this->terminal);
+>>>>>>> 6-view_delete
     }
 
     /**

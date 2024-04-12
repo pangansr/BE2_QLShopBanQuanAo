@@ -2,9 +2,12 @@
 
 @section('content')
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3-listOfUser
+=======
+>>>>>>> 6-view_delete
     <main class="signup-form">
         <div class="cotainer">
             <div class="row justify-content-center">
@@ -15,9 +18,12 @@
                             <form action="{{ route('user.postUser') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 
 =======
 >>>>>>> 3-listOfUser
+=======
+>>>>>>> 6-view_delete
                                 <div class="form-group mb-3">
                                     <label for="Tên người dùng">Tên người dùng</label><br><br>
                                     <input type="text" placeholder="Tên người dùng" id="name" class="form-control" name="name" required autofocus>

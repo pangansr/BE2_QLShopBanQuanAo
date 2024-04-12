@@ -997,19 +997,79 @@ class BelongsToMany extends Relation
      */
     public function chunkById($count, callable $callback, $column = null, $alias = null)
     {
+<<<<<<< HEAD
         $this->prepareQueryBuilder();
 
+=======
+        return $this->orderedChunkById($count, $callback, $column, $alias);
+    }
+
+    /**
+     * Chunk the results of a query by comparing IDs in descending order.
+     *
+     * @param  int  $count
+     * @param  callable  $callback
+     * @param  string|null  $column
+     * @param  string|null  $alias
+     * @return bool
+     */
+    public function chunkByIdDesc($count, callable $callback, $column = null, $alias = null)
+    {
+        return $this->orderedChunkById($count, $callback, $column, $alias, descending: true);
+    }
+
+    /**
+     * Execute a callback over each item while chunking by ID.
+     *
+     * @param  callable  $callback
+     * @param  int  $count
+     * @param  string|null  $column
+     * @param  string|null  $alias
+     * @return bool
+     */
+    public function eachById(callable $callback, $count = 1000, $column = null, $alias = null)
+    {
+        return $this->chunkById($count, function ($results, $page) use ($callback, $count) {
+            foreach ($results as $key => $value) {
+                if ($callback($value, (($page - 1) * $count) + $key) === false) {
+                    return false;
+                }
+            }
+        }, $column, $alias);
+    }
+
+    /**
+     * Chunk the results of a query by comparing IDs in a given order.
+     *
+     * @param  int  $count
+     * @param  callable  $callback
+     * @param  string|null  $column
+     * @param  string|null  $alias
+     * @param  bool  $descending
+     * @return bool
+     */
+    public function orderedChunkById($count, callable $callback, $column = null, $alias = null, $descending = false)
+    {
+>>>>>>> 6-view_delete
         $column ??= $this->getRelated()->qualifyColumn(
             $this->getRelatedKeyName()
         );
 
         $alias ??= $this->getRelatedKeyName();
 
+<<<<<<< HEAD
         return $this->query->chunkById($count, function ($results) use ($callback) {
             $this->hydratePivotRelation($results->all());
 
             return $callback($results);
         }, $column, $alias);
+=======
+        return $this->prepareQueryBuilder()->orderedChunkById($count, function ($results, $page) use ($callback) {
+            $this->hydratePivotRelation($results->all());
+
+            return $callback($results, $page);
+        }, $column, $alias, $descending);
+>>>>>>> 6-view_delete
     }
 
     /**
@@ -1069,6 +1129,32 @@ class BelongsToMany extends Relation
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Query lazily, by chunking the results of a query by comparing IDs in descending order.
+     *
+     * @param  int  $chunkSize
+     * @param  string|null  $column
+     * @param  string|null  $alias
+     * @return \Illuminate\Support\LazyCollection
+     */
+    public function lazyByIdDesc($chunkSize = 1000, $column = null, $alias = null)
+    {
+        $column ??= $this->getRelated()->qualifyColumn(
+            $this->getRelatedKeyName()
+        );
+
+        $alias ??= $this->getRelatedKeyName();
+
+        return $this->prepareQueryBuilder()->lazyByIdDesc($chunkSize, $column, $alias)->map(function ($model) {
+            $this->hydratePivotRelation([$model]);
+
+            return $model;
+        });
+    }
+
+    /**
+>>>>>>> 6-view_delete
      * Get a lazy collection for the given query.
      *
      * @return \Illuminate\Support\LazyCollection

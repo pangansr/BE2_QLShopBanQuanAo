@@ -52,7 +52,11 @@ abstract class Prompt
     /**
      * The cancellation callback.
      */
+<<<<<<< HEAD
     protected static Closure $cancelUsing;
+=======
+    protected static ?Closure $cancelUsing;
+>>>>>>> 6-view_delete
 
     /**
      * Indicates if the prompt has been validated.
@@ -136,7 +140,11 @@ abstract class Prompt
     /**
      * Register a callback to be invoked when a user cancels a prompt.
      */
+<<<<<<< HEAD
     public static function cancelUsing(Closure $callback): void
+=======
+    public static function cancelUsing(?Closure $callback): void
+>>>>>>> 6-view_delete
     {
         static::$cancelUsing = $callback;
     }
@@ -208,6 +216,11 @@ abstract class Prompt
      */
     protected function render(): void
     {
+<<<<<<< HEAD
+=======
+        $this->terminal()->initDimensions();
+
+>>>>>>> 6-view_delete
         $frame = $this->renderTheme();
 
         if ($frame === $this->prevFrame) {
@@ -223,6 +236,7 @@ abstract class Prompt
             return;
         }
 
+<<<<<<< HEAD
         $this->resetCursorPosition();
 
         // Ensure that the full frame is buffered so subsequent output can see how many trailing newlines were written.
@@ -252,6 +266,16 @@ abstract class Prompt
             $newLines = array_slice($lines, $diffLine);
             static::output()->write(implode(PHP_EOL, $newLines));
         }
+=======
+        $terminalHeight = $this->terminal()->lines();
+        $previousFrameHeight = count(explode(PHP_EOL, $this->prevFrame));
+        $renderableLines = array_slice(explode(PHP_EOL, $frame), abs(min(0, $terminalHeight - $previousFrameHeight)));
+
+        $this->moveCursorToColumn(1);
+        $this->moveCursorUp(min($terminalHeight, $previousFrameHeight) - 1);
+        $this->eraseDown();
+        $this->output()->write(implode(PHP_EOL, $renderableLines));
+>>>>>>> 6-view_delete
 
         $this->prevFrame = $frame;
     }
@@ -269,6 +293,7 @@ abstract class Prompt
     }
 
     /**
+<<<<<<< HEAD
      * Reset the cursor position to the beginning of the previous frame.
      */
     private function resetCursorPosition(): void
@@ -303,6 +328,8 @@ abstract class Prompt
     }
 
     /**
+=======
+>>>>>>> 6-view_delete
      * Handle a key press and determine whether to continue.
      */
     private function handleKeyPress(string $key): bool

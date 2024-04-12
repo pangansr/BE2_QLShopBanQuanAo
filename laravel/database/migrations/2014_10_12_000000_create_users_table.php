@@ -5,9 +5,12 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3-listOfUser
+=======
+>>>>>>> 6-view_delete
 return new class extends Migration
 {
     /**

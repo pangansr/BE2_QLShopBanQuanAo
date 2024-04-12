@@ -20,6 +20,7 @@ Route::get('/', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 Route::get('dashboard', [CrudUserController::class, 'dashboard']);
@@ -32,6 +33,11 @@ Route::post('create', [CrudUserController::class, 'postUser'])->name('user.postU
 Route::get('list', [CrudUserController::class, 'listUser'])->name('user.list');
 
 >>>>>>> 3-listOfUser
+=======
+//Tran Huu Kien
+Route::get('list', [CrudUserController::class, 'listUser'])->name('user.list');
+
+>>>>>>> 6-view_delete
 //Login(Tran Huu Nam)
 Route::get('login', [CrudUserController::class, 'login'])->name('login');
 Route::post('login', [CrudUserController::class, 'authUser'])->name('user.authUser');
@@ -43,6 +49,12 @@ Route::get('create', [CrudUserController::class, 'createUser'])->name('user.crea
 Route::post('create', [CrudUserController::class, 'postUser'])->name('user.postUser');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 3-login/logout
 =======
 >>>>>>> 3-listOfUser
+=======
+//Pham Thi Bich Buoc
+Route::get('read', [CrudUserController::class, 'readUser'])->name('user.readUser');
+Route::get('delete', [CrudUserController::class, 'deleteUser'])->name('user.deleteUser');
+>>>>>>> 6-view_delete

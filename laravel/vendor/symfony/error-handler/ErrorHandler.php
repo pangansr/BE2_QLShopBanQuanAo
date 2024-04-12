@@ -595,6 +595,13 @@ class ErrorHandler
             set_exception_handler($h);
         }
         if (!$handler) {
+<<<<<<< HEAD
+=======
+            if (null === $error && $exitCode = self::$exitCode) {
+                register_shutdown_function('register_shutdown_function', function () use ($exitCode) { exit($exitCode); });
+            }
+
+>>>>>>> 6-view_delete
             return;
         }
         if ($handler !== $h) {
@@ -630,8 +637,12 @@ class ErrorHandler
             // Ignore this re-throw
         }
 
+<<<<<<< HEAD
         if ($exit && self::$exitCode) {
             $exitCode = self::$exitCode;
+=======
+        if ($exit && $exitCode = self::$exitCode) {
+>>>>>>> 6-view_delete
             register_shutdown_function('register_shutdown_function', function () use ($exitCode) { exit($exitCode); });
         }
     }

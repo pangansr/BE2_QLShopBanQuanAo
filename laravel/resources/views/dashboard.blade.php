@@ -19,9 +19,12 @@
             <ul class="navbar-nav ms-auto">
                 @guest
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
 =======
 >>>>>>> 3-listOfUser
+=======
+>>>>>>> 6-view_delete
                     <li class="nav-item">
                          <a class="nav-link" href="{{ route('login') }}">Login</a>
                     

@@ -162,7 +162,11 @@ class Builder
     {
         $table = $this->connection->getTablePrefix().$table;
 
+<<<<<<< HEAD
         foreach ($this->getTables() as $value) {
+=======
+        foreach ($this->getTables(false) as $value) {
+>>>>>>> 6-view_delete
             if (strtolower($table) === strtolower($value['name'])) {
                 return true;
             }

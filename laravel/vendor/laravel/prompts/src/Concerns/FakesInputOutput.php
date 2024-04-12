@@ -27,6 +27,10 @@ trait FakesInputOutput
         $mock->shouldReceive('restoreTty')->byDefault();
         $mock->shouldReceive('cols')->byDefault()->andReturn(80);
         $mock->shouldReceive('lines')->byDefault()->andReturn(24);
+<<<<<<< HEAD
+=======
+        $mock->shouldReceive('initDimensions')->byDefault();
+>>>>>>> 6-view_delete
 
         foreach ($keys as $key) {
             $mock->shouldReceive('read')->once()->andReturn($key);

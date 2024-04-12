@@ -186,7 +186,13 @@ final class PhptTestCase implements Reorderable, SelfDescribing, Test
         $jobResult    = $this->phpUtil->runJob($code, $this->stringifyIni($settings));
         $this->output = $jobResult['stdout'] ?? '';
 
+<<<<<<< HEAD
         if (CodeCoverage::instance()->isActive() && ($coverage = $this->cleanupForCoverage())) {
+=======
+        if (CodeCoverage::instance()->isActive()) {
+            $coverage = $this->cleanupForCoverage();
+
+>>>>>>> 6-view_delete
             CodeCoverage::instance()->codeCoverage()->start($this->filename, TestSize::large());
 
             CodeCoverage::instance()->codeCoverage()->append(

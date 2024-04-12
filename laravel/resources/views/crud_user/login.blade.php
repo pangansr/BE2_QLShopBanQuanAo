@@ -2,6 +2,7 @@
 
 @section('content')
 <<<<<<< HEAD
+<<<<<<< HEAD
 <style>
     a{
   text-decoration: none;
@@ -114,6 +115,8 @@ margin: auto 180px;
                                 <button type="submit" class="btn btn-sm bg-primary" style="color: black;">Đăng Nhập</button>
                             </div>
 =======
+=======
+>>>>>>> 6-view_delete
     <main class="login-form">
         <div class="cotainer">
             <div class="row justify-content-center">
@@ -147,11 +150,15 @@ margin: auto 180px;
                                     <button type="submit" class="btn btn-dark btn-block">Đăng nhập</button>
                                 </div>
                             </form>
+<<<<<<< HEAD
 >>>>>>> 3-listOfUser
+=======
+>>>>>>> 6-view_delete
                         </div>
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </form>
         
@@ -162,3 +169,8 @@ margin: auto 180px;
     </main>
 @endsection
 >>>>>>> 3-listOfUser
+=======
+        </div>
+    </main>
+@endsection
+>>>>>>> 6-view_delete

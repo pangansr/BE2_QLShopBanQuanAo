@@ -36,15 +36,22 @@
                                             @endif
                                         </td>
                                         <td>
+<<<<<<< HEAD
                                             <a href="" class="btn btn-sm btn-info">View</a>
                                             <a href="" class="btn btn-sm btn-warning">Edit</a>
                                             <a href="" class="btn btn-sm btn-danger">Delete</a>
+=======
+                                            <a href="{{ route('user.readUser', ['id' => $user->id]) }}" class="btn btn-sm btn-info">View</a>
+                                            <a href="" class="btn btn-sm btn-warning">Edit</a>
+                                            <a href="{{ route('user.deleteUser', ['id' => $user->id]) }}" onclick="return confirm('Bạn có chắc muốn xóa tài khoản này không?')" class="btn btn-sm btn-danger">Delete</a>
+>>>>>>> 6-view_delete
                                         </td>
                                     </tr>
                                     @endforeach
                                 </tbody>
                             </table>
                         </div>
+<<<<<<< HEAD
                         </div>
                             <link href="{{ asset('css/pagination.css') }}" rel="stylesheet">
                         <!-- Container cho thanh phân trang -->
@@ -68,10 +75,16 @@
                                 <span class="disabled">&raquo;</span>
                             @endif
                         </div>
+=======
+>>>>>>> 6-view_delete
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </main>
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> 6-view_delete

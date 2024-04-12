@@ -5,7 +5,10 @@ namespace Laravel\Prompts\Themes\Default;
 use Laravel\Prompts\Concerns\Colors;
 use Laravel\Prompts\Concerns\Truncation;
 use Laravel\Prompts\Prompt;
+<<<<<<< HEAD
 use RuntimeException;
+=======
+>>>>>>> 6-view_delete
 
 abstract class Renderer
 {
@@ -22,7 +25,11 @@ abstract class Renderer
      */
     public function __construct(protected Prompt $prompt)
     {
+<<<<<<< HEAD
         $this->checkTerminalSize($prompt);
+=======
+        //
+>>>>>>> 6-view_delete
     }
 
     /**
@@ -100,6 +107,7 @@ abstract class Renderer
             .$this->output
             .(in_array($this->prompt->state, ['submit', 'cancel']) ? PHP_EOL : '');
     }
+<<<<<<< HEAD
 
     /**
      * Check that the terminal is large enough to render the prompt.
@@ -115,4 +123,6 @@ abstract class Renderer
             );
         }
     }
+=======
+>>>>>>> 6-view_delete
 }

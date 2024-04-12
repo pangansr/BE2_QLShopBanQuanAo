@@ -60,4 +60,23 @@ trait Cursor
 
         static::writeDirectly($sequence);
     }
+<<<<<<< HEAD
+=======
+
+    /**
+     * Move the cursor to the given column.
+     */
+    public function moveCursorToColumn(int $column): void
+    {
+        static::writeDirectly("\e[{$column}G");
+    }
+
+    /**
+     * Move the cursor up by the given number of lines.
+     */
+    public function moveCursorUp(int $lines): void
+    {
+        static::writeDirectly("\e[{$lines}A");
+    }
+>>>>>>> 6-view_delete
 }

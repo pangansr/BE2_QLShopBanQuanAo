@@ -85,7 +85,10 @@ final class Reader
 
                     $description = $issueElement->textContent;
 
+<<<<<<< HEAD
                     assert(!empty($file));
+=======
+>>>>>>> 6-view_delete
                     assert($line > 0);
                     assert(!empty($hash));
                     assert(!empty($description));

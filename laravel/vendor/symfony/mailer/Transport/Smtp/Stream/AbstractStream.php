@@ -30,6 +30,10 @@ abstract class AbstractStream
     protected $in;
     /** @var resource|null */
     protected $out;
+<<<<<<< HEAD
+=======
+    protected $err;
+>>>>>>> 6-view_delete
 
     private string $debug = '';
 
@@ -68,7 +72,11 @@ abstract class AbstractStream
 
     public function terminate(): void
     {
+<<<<<<< HEAD
         $this->stream = $this->out = $this->in = null;
+=======
+        $this->stream = $this->err = $this->out = $this->in = null;
+>>>>>>> 6-view_delete
     }
 
     public function readLine(): string

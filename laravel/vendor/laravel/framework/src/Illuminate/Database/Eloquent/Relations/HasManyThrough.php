@@ -601,6 +601,27 @@ class HasManyThrough extends Relation
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Chunk the results of a query by comparing IDs in descending order.
+     *
+     * @param  int  $count
+     * @param  callable  $callback
+     * @param  string|null  $column
+     * @param  string|null  $alias
+     * @return bool
+     */
+    public function chunkByIdDesc($count, callable $callback, $column = null, $alias = null)
+    {
+        $column ??= $this->getRelated()->getQualifiedKeyName();
+
+        $alias ??= $this->getRelated()->getKeyName();
+
+        return $this->prepareQueryBuilder()->chunkByIdDesc($count, $callback, $column, $alias);
+    }
+
+    /**
+>>>>>>> 6-view_delete
      * Execute a callback over each item while chunking by ID.
      *
      * @param  callable  $callback
@@ -675,6 +696,26 @@ class HasManyThrough extends Relation
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Query lazily, by chunking the results of a query by comparing IDs in descending order.
+     *
+     * @param  int  $chunkSize
+     * @param  string|null  $column
+     * @param  string|null  $alias
+     * @return \Illuminate\Support\LazyCollection
+     */
+    public function lazyByIdDesc($chunkSize = 1000, $column = null, $alias = null)
+    {
+        $column ??= $this->getRelated()->getQualifiedKeyName();
+
+        $alias ??= $this->getRelated()->getKeyName();
+
+        return $this->prepareQueryBuilder()->lazyByIdDesc($chunkSize, $column, $alias);
+    }
+
+    /**
+>>>>>>> 6-view_delete
      * Prepare the query builder for query execution.
      *
      * @param  array  $columns

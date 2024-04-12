@@ -34,7 +34,11 @@ final class Version
         }
 
         if (self::$version === '') {
+<<<<<<< HEAD
             self::$version = (new VersionId('10.5.16', dirname(__DIR__, 2)))->asString();
+=======
+            self::$version = (new VersionId('10.5.17', dirname(__DIR__, 2)))->asString();
+>>>>>>> 6-view_delete
         }
 
         return self::$version;

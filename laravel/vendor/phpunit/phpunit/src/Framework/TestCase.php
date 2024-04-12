@@ -1185,7 +1185,11 @@ abstract class TestCase extends Assert implements Reorderable, SelfDescribing, T
             throw new Exception;
         }
 
+<<<<<<< HEAD
         $this->locale[$category] = setlocale($category, 0);
+=======
+        $this->locale[$category] = setlocale($category, '0');
+>>>>>>> 6-view_delete
 
         $result = setlocale(...$arguments);
 

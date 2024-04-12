@@ -17,7 +17,11 @@ use Throwable;
 final class Cloner
 {
     /**
+<<<<<<< HEAD
      * @psalm-template OriginalType
+=======
+     * @psalm-template OriginalType of object
+>>>>>>> 6-view_delete
      *
      * @psalm-param OriginalType $original
      *

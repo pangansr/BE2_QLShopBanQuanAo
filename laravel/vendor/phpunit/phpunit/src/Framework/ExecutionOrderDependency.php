@@ -136,6 +136,12 @@ final class ExecutionOrderDependency implements Stringable
 
     public function __construct(string $classOrCallableName, ?string $methodName = null, bool $deepClone = false, bool $shallowClone = false)
     {
+<<<<<<< HEAD
+=======
+        $this->deepClone    = $deepClone;
+        $this->shallowClone = $shallowClone;
+
+>>>>>>> 6-view_delete
         if ($classOrCallableName === '') {
             return;
         }
@@ -146,9 +152,12 @@ final class ExecutionOrderDependency implements Stringable
             $this->className  = $classOrCallableName;
             $this->methodName = !empty($methodName) ? $methodName : 'class';
         }
+<<<<<<< HEAD
 
         $this->deepClone    = $deepClone;
         $this->shallowClone = $shallowClone;
+=======
+>>>>>>> 6-view_delete
     }
 
     public function __toString(): string

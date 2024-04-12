@@ -7,6 +7,10 @@ namespace League\Flysystem;
 use DateTimeInterface;
 use Throwable;
 
+<<<<<<< HEAD
+=======
+use function compact;
+>>>>>>> 6-view_delete
 use function method_exists;
 use function sprintf;
 
@@ -396,10 +400,18 @@ class MountManager implements FilesystemOperator
         try {
             if ($visibility == null && $retainVisibility) {
                 $visibility = $sourceFilesystem->visibility($sourcePath);
+<<<<<<< HEAD
             }
 
             $stream = $sourceFilesystem->readStream($sourcePath);
             $destinationFilesystem->writeStream($destinationPath, $stream, $visibility ? compact(Config::OPTION_VISIBILITY) : []);
+=======
+                $config = $config->extend(compact('visibility'));
+            }
+
+            $stream = $sourceFilesystem->readStream($sourcePath);
+            $destinationFilesystem->writeStream($destinationPath, $stream, $config->toArray());
+>>>>>>> 6-view_delete
         } catch (UnableToRetrieveMetadata | UnableToReadFile | UnableToWriteFile $exception) {
             throw UnableToCopyFile::fromLocationTo($source, $destination, $exception);
         }
