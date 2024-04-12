@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CrudUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,7 @@ Route::get('/', function () {
 });
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 Route::get('dashboard', [CrudUserController::class, 'dashboard']);
@@ -25,6 +27,11 @@ Route::get('create', [CrudUserController::class, 'createUser'])->name('user.crea
 Route::post('create', [CrudUserController::class, 'postUser'])->name('user.postUser');
 >>>>>>> 4-register
 =======
+=======
+//Nguen Huu Kien
+Route::get('list', [CrudUserController::class, 'listUser'])->name('user.list');
+
+>>>>>>> 3-listOfUser
 //Login(Tran Huu Nam)
 Route::get('login', [CrudUserController::class, 'login'])->name('login');
 Route::post('login', [CrudUserController::class, 'authUser'])->name('user.authUser');
@@ -35,4 +42,7 @@ Route::get('dashboard', [CrudUserController::class, 'dashboard']);
 Route::get('create', [CrudUserController::class, 'createUser'])->name('user.createUser');
 Route::post('create', [CrudUserController::class, 'postUser'])->name('user.postUser');
 
+<<<<<<< HEAD
 >>>>>>> 3-login/logout
+=======
+>>>>>>> 3-listOfUser

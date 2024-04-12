@@ -1,0 +1,21 @@
+.pagination-container {
+    display: flex;
+    justify-content: center; /* Căn giữa container */
+    margin-top: 20px; /* Khoảng cách từ bảng đến thanh phân trang */
+}
+
+.pagination-container a {
+    margin: 0 5px; /* Khoảng cách giữa các liên kết */
+    text-decoration: none;
+    color: #2be935; /* Màu của các liên kết */
+}
+
+.pagination-container a.active {
+    font-weight: bold; /* Hiển thị liên kết trang hiện tại với đậm */
+}
+
+.pagination-container .disabled {
+    color: #ddd;
+    pointer-events: none;
+    cursor: default;
+}

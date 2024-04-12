@@ -18,7 +18,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 @guest
+<<<<<<< HEAD
                 
+=======
+>>>>>>> 3-listOfUser
                     <li class="nav-item">
                          <a class="nav-link" href="{{ route('login') }}">Login</a>
                     
