@@ -37,8 +37,8 @@
                                         </td>
                                         <td>
                                             <a href="{{ route('user.readUser', ['id' => $user->id]) }}" class="btn btn-sm btn-info">View</a>
-                                            <a href="" class="btn btn-sm btn-warning">Edit</a>
-                                            <a href="{{ route('user.deleteUser', ['id' => $user->id]) }}" onclick="return confirm('Bạn có chắc muốn xóa tài khoản này không?')" class="btn btn-sm btn-danger">Delete</a>
+                                            <a href="{{ route('user.updateUser', ['id' => $user->id]) }}" class="btn btn-sm btn-warning">Edit</a>
+                                            <a href="{{ route('user.deleteUser', ['id' => $user->id]) }}" class="btn btn-sm btn-danger">Delete</a>
                                         </td>
                                     </tr>
                                     @endforeach
