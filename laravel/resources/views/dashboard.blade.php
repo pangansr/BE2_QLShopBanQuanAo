@@ -8,7 +8,7 @@
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-light navbar-expand-lg mb-5 py-4" style="background-color: #74f055;">
+<nav class="navbar navbar-light navbar-expand-lg mb-5 py-4" style="background-color: #00fcca;">
     <div class="container">
         <h3 style="color: rgb(1, 43, 4)">Demo Laravel</h3>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -20,8 +20,8 @@
                 @guest
                 
                     <li class="nav-item">
-                        {{-- <a class="nav-link" href="{{ route('login') }}">Login</a> --}}
-                        <a class="nav-link" href="">Login</a>
+                         <a class="nav-link" href="{{ route('login') }}">Login</a>
+                    
                     </li>
                     <li class="nav-item">
                        
@@ -29,8 +29,8 @@
                     </li>
                 @else
                     <li class="nav-item">
-                        {{-- <a class="nav-link" href="{{ route('signout') }}">Logout</a> --}}
-                        <a class="nav-link" href="">Logout</a>
+                         <a class="nav-link" href="{{ route('signout') }}">Logout</a>
+                     
                     </li>
                 @endguest
             </ul>
