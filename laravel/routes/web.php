@@ -17,6 +17,9 @@ use App\Http\Controllers\CrudUserController;
 Route::get('/', function () {
     return view('crud_user.create');
 });
+//Nguen Huu Kien
+Route::get('list', [CrudUserController::class, 'listUser'])->name('user.list');
+
 //Login(Tran Huu Nam)
 Route::get('login', [CrudUserController::class, 'login'])->name('login');
 Route::post('login', [CrudUserController::class, 'authUser'])->name('user.authUser');

@@ -1,7 +1,6 @@
 @extends('dashboard')
 
 @section('content')
-
     <main class="signup-form">
         <div class="cotainer">
             <div class="row justify-content-center">
@@ -11,7 +10,6 @@
                         <div class="card-body">
                             <form action="{{ route('user.postUser') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
-                                
                                 <div class="form-group mb-3">
                                     <label for="Tên người dùng">Tên người dùng</label><br><br>
                                     <input type="text" placeholder="Tên người dùng" id="name" class="form-control" name="name" required autofocus>

@@ -9,6 +9,20 @@ use Illuminate\Http\Request;
 
 class CrudUserController extends Controller
 {
+    //Nguyen Huu Kien
+    public function listUser()
+     {
+        // if (Auth::check()) {
+           //  $users = User::all();
+             $users = User::paginate(1); 
+             return view('crud_user.list', ['users' => $users]);
+        // }
+       
+       //  return redirect()->route('user.list')->with('success', 'Bạn không được phép truy cập');
+     }
+
+
+
      //Tran Huu Nam
      public function login()
      {
@@ -25,8 +39,8 @@ class CrudUserController extends Controller
          $credentials = $request->only('email', 'password');
  
           if (Auth::attempt($credentials)) {
-             return redirect()->intended('dashboard');
-             //->withSuccess('Signed in');
+             return redirect()->intended('list')
+                 ->withSuccess('Signed in');
         }
          return redirect("login")->withSuccess('Login details are not valid');
      }
@@ -62,8 +76,6 @@ class CrudUserController extends Controller
             $imageName = time() . '_' . $request->image->getClientOriginalName(); 
             $request->image->move(public_path('images'), $imageName); 
            
-
-            
             $data = $request->all();
             $check = User::create([
                 'name' => $data['name'],

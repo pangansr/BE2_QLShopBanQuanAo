@@ -1,0 +1,58 @@
+.pagination {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.pagination .disabled {
+    color: #ddd;
+    pointer-events: none;
+    cursor: default;
+}
+.pagination-container {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    display: inline-block;
+    margin: 0;
+}
+.pagination {
+    position: fixed;
+    left: 50%; /* Đặt left thành 50% để đưa phân trang vào giữa */
+    transform: translateX(-50%); /* Di chuyển phân trang sang trái 50% để căn giữa */
+    bottom: 20px;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+
+.pagination a {
+    margin: 0 5px; /* Khoảng cách giữa các liên kết trong phân trang */
+    text-decoration: none;
+    color: #333; /* Màu của các liên kết */
+}
+
+.pagination a.active {
+    font-weight: bold; /* Hiển thị liên kết trang hiện tại với đậm */
+}
