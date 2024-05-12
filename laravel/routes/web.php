@@ -37,3 +37,5 @@ Route::get('delete', [CrudUserController::class, 'deleteUser'])->name('user.dele
 //Pham Thi Thanh Tam
 Route::get('update', [CrudUserController::class, 'updateUser'])->name('user.updateUser');
 Route::post('update', [CrudUserController::class, 'postUpdateUser'])->name('user.postUpdateUser');
+//Riêng Mình Taooo
+Route::get('DSST', [CrudUserController::class, 'listFavorite']);

@@ -38,7 +38,7 @@
                                         <td>
                                             <a href="{{ route('user.readUser', ['id' => $user->id]) }}" class="btn btn-sm btn-info">View</a>
                                             <a href="{{ route('user.updateUser', ['id' => $user->id]) }}" class="btn btn-sm btn-warning">Edit</a>
-                                            <a href="{{ route('user.deleteUser', ['id' => $user->id]) }}" class="btn btn-sm btn-danger">Delete</a>
+                                            <a href="#" onclick="confirmDelete({{ $user->id }})" class="btn btn-sm btn-danger">Delete</a>
                                         </td>
                                     </tr>
                                     @endforeach
@@ -51,4 +51,12 @@
         </div>
     </div>
 </main>
+
+<script>
+    function confirmDelete(userId) {
+        if(confirm('Bạn có chắc muốn xóa người dùng với ID:' +userId+ ' này không?')) {
+            window.location.href = '/delete?id=' + userId;
+        }
+    }
+</script>
 @endsection
